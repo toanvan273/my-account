@@ -12,7 +12,7 @@ export default function Home (){
                 <div className="action">
                     <NewActionInput />
                 </div>
-                <div className="content">
+                <div className="row">
                     <NewList />
                     <InProgressList />
                     <CompletedList />

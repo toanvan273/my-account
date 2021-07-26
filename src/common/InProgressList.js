@@ -1,19 +1,24 @@
 import React from 'react';
-import { useRecoilValue } from 'recoil';
-import { inprogressListState } from '../recoil/listState';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { inprogressListState , completedListState} from '../recoil/listState';
 
 const InProgressList = () => {
     const inprogressList = useRecoilValue(inprogressListState)
-    console.log('inprogressList',inprogressList)
-
+    const setCompleted = useSetRecoilState(completedListState)
+    // console.log('inprogressList',setCompleted)
+    const handleClick = id => () => {
+      setCompleted(id)
+    }
     return (
         <div className='col'>
       <h3>In-Progress</h3>
       <ul>
         {inprogressList.map((item) => (
-          <li key={item.id}>
-            {item.content}
-            <button>Completed</button>
+          <li key={item.id} className="d-flex">
+            <span>{item.content}</span>
+            <button className="ms-3"
+            onClick={ handleClick(item.id)}
+            >Completed</button>
           </li>
         ))}
       </ul>
