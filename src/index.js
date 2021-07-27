@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import './statics/scss/styles.scss'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {RecoilRoot} from 'recoil'

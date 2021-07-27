@@ -1,0 +1,31 @@
+#homePage{
+    // background: red;
+    .img-wrap{
+        justify-content: center;
+        align-items: center;
+    }
+    .border-wrap{
+        border: 1px solid orange;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .branch-wrap{
+        border-radius: 100%;
+        box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px 0px;
+        background: #ffffff;
+        height: 120px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        left: -65px;
+        top: 10px;
+    }
+    .content-wrap{
+        min-height: 250px;
+        padding-left: 50px;
+    }
+}

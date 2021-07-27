@@ -1,5 +1,12 @@
 import React from 'react'
+import img1 from '../statics/img/item-1.jpg'
+import img2 from '../statics/img/item-2.jpg'
+import img3 from '../statics/img/item-3.jpg'
 
+import icon1 from '../statics/img/icon-1.png'
+import icon2 from '../statics/img/icon-2.png'
+import icon3 from '../statics/img/icon-3.png'
+import icon4 from '../statics/img/icon-4.png'
 export default function Dashboard (){
     return (
         <div>
@@ -14,7 +21,7 @@ export default function Dashboard (){
           <div className="btn-group gap-2" role="group" aria-label="Basic example">
             <button type="button" className="btn btn-primary">Left</button>
           
-            <button type="button" class="btn btn-primary">Right</button>
+            <button type="button" className="btn btn-primary">Right</button>
           </div>
         </div>
       </div>
@@ -29,14 +36,14 @@ export default function Dashboard (){
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              {/* <Image src={img1} alt="img1" className="d-block w-100"/> */}
+              <img src={img1} alt="img1" className="d-block w-100"/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div className="carousel-item">
-              {/* <Image src={img2} alt="img1" className="d-block w-100"/> */}
+              <img src={img2} alt="img1" className="d-block w-100"/>
 
               <div className="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
@@ -44,7 +51,7 @@ export default function Dashboard (){
               </div>
             </div>
             <div className="carousel-item">
-              {/* <Image src={img3} alt="img1" className="d-block w-100"/> */}
+              <img src={img3} alt="img1" className="d-block w-100"/>
 
               <div className="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
@@ -82,28 +89,28 @@ export default function Dashboard (){
           <div className="row">
               <div className="col-sm-6 col-md-3" style={{minHeight: '344px'}}>
                 <div className="img-icon">
-                  {/* <Image src={icon1} alt="icon1" /> */}
+                  <img src={icon1} alt="icon1" />
                 </div>
                 <h4>Corporate Management</h4>
                 <p>In hac habitasse platea dictumst dapibus eros ac leo blandit, ligula sit amet posuere turpis lementum at eu mattis.</p>
               </div>
               <div className="col-sm-6 col-md-3" style={{minHeight: '344px'}}>
                 <div className="img-icon">
-                {/* <Image src={icon2} alt="icon2" /> */}
+                <img src={icon2} alt="icon2" />
                 </div>
                 <h4>Legal Solutions</h4>
                 <p>Donec eget est quis metus ligula enenatis interdum vitae condi mentum sem, condi mentum ortor estibum laoreet sem.</p>
               </div>
               <div className="col-sm-6 col-md-3" style={{minHeight: '344px'}}>
                 <div className="img-icon">
-                {/* <Image src={icon3} alt="icon2" /> */}
+                <img src={icon3} alt="icon2" />
                 </div>
                 <h4>Legal Solutions</h4>
                 <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. Suspendisse pulvinar commodo tellus, vitae pellentesque augue euismod non.</p>
               </div>
               <div className="col-sm-6 col-md-3" style={{minHeight: '344px'}}>
               <div className="img-icon">
-                {/* <Image src={icon4} alt="icon2" /> */}
+                <img src={icon4} alt="icon2" />
                 </div>
                 <h4>Legal Solutions</h4>
                 <p>Proin lacinia commodo orci, quis leo dignissim ac. Nulla nec, nec dolo malesuada eros mauris id lectus ante iverra pharetra.</p>
